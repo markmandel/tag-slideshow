@@ -1,39 +1,45 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Tag Slideshow</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tag Slideshow</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="{{ less }}">
-    </head>
+	<link rel="stylesheet" href="{{ less }}">
+</head>
 <body>
 
 <!--
 <div id="debug">Debug:<br/></div>
 -->
 
-		<div id="slideshow">
-			<img id="bottom" class="slide" src="#" width="640" height="640"/>
-			<img id="top" class="slide" src="#" width="640" height="640" />
-		</div>
-		<div id="caption">
-			<img id="profile-pic" src="#" width="90" height="90"/>
-			<strong id="name"></strong>
-			<div id="text"></div>
-		</div>
+<div id="slideshow">
+	<img id="bottom" class="slide" src="#" width="640" height="640"/>
+	<img id="top" class="slide" src="#" width="640" height="640"/>
+</div>
 
-		<h2 id="instagram-tag">#{{ instagram-tag }}</h2>
+<div id="caption">
+	<img id="profile-pic" src="#" width="90" height="90"/>
+	<strong id="name"></strong>
 
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		<script src="/public/js/main.js"></script>
+	<div id="text"></div>
+</div>
 
-		{% if music-url %}
-			<iframe id="music" src="{{ music-url }}"></iframe>
-		{% endif %}
-    </body>
+<h2 id="instagram-tag">#{{ instagram-tag }}</h2>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/public/js/main.js"></script>
+
+{% if music-url %}
+<iframe id="music" src="{{ music-url }}"></iframe>
+{% endif %}
+</body>
 </html>
