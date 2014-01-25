@@ -1,7 +1,7 @@
 @import "lesshat-prefixed";
 
 body {
-	background-image: url("/public/img/blackorchid.png");
+	background-image: url("/public/img/blackmamba/blackmamba.png");
 }
 
 #debug {
@@ -14,8 +14,9 @@ body {
 
 #slideshow {
 	position: relative;
-	width: 640px;
+	width: 640px + 20px;
 	float: left;
+	margin: 20px 0 0 20px;
 }
 
 #slideshow img.slide {
@@ -30,16 +31,18 @@ body {
 
 #caption {
 	color: white;
-	margin-left: 650px;
+	margin: 0 20px 0 (640px + 30px);
+	float: left;
+	text-align: left;
 }
 
 #name {
-	margin-left: 95px;
+	margin-left: 100px;
 	display: block;
 }
 
 #text {
-	margin-left: 95px;
+	margin-left: 100px;
 }
 
 #profile-pic {
@@ -49,3 +52,12 @@ body {
 #music {
 	display: none;
 }
+
+#instagram-tag {
+	color: white;
+	position: absolute;
+	right: 50px;
+	bottom: 5px;
+	font-size: 2.5em;
+}
+

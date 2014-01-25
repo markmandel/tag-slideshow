@@ -49,7 +49,8 @@
     [system]
     (selmer/render-file "views/index.html"
                         {:less (dieter/link-to-asset "main.less" (:dieter system))
-                         :music-url (:music-url system)}))
+                         :music-url (:music-url system)
+                         :instagram-tag (:instagram-tag system)}))
 
 (defn- create-routes
     [system]
