@@ -32,7 +32,7 @@
     "loads the photos"
     [system]
     (println "Getting instagram images...")
-    (let [response (api/get-tagged-medias :oauth (:oauth-creds system) :params {:tag_name (:instagram-tag system)})]
+    (let [response (api/get-tagged-medias :oauth (:oauth-creds system) :params {:tag_name (:instagram-tag system) :count 50})]
         (map (fn [data]
                  (let [user (get data "user")
                        image (get-in data ["images" "standard_resolution"])
