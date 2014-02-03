@@ -1,36 +1,22 @@
 # tag-slideshow
 
-FIXME: description
+A simple/naive slideshow that searches for particular tag on instagram and displaying the photos on screen.
 
 ## Installation
 
-Download from http://example.com/FIXME.
+You will need a `instagram.properties` file in the root of the directory that specifies the instagram client details,
+what tag to search for, and an optional url to embed in an iframe (to embed music).
 
-## Usage
+### Example instagram.properties
 
-FIXME: explanation
+```
+client.id = 74935zzzzXXXXXXXXXd59cbaE5b704461cfe
+client.secret = 2YYYYYYYYYYYYYYYIiiiiiiiiiiiiiiooa261b
+instagram.tag = dog
+music.url = http://www.abc.net.au/triplej/player/triplej.htm
+```
 
-    $ java -jar tag-slideshow-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2014 FIXME
+Copyright © 2014 Mark Mandel
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
